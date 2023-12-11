@@ -9,17 +9,15 @@ int main()
 
     for (int i = 0; name[i] != NULL; i++)
     {
-        if (name[i] >= 'A' && name[i] <= 'Z')
+        if (name[i] >= 65 && name[i] <= 90)
         {
             name[i] += 32;
         }
-        else if (name[i] >= 'a' && name[i] <= 'z')
+        else if (name[i] >= 97 && name[i] <= 122)
         {
             name[i] -= 32;
             }
     }
-
     cout << name;
-        
     return 0;
 }
