@@ -32,23 +32,23 @@ public:
     }
 
     void getter(){
-        cout << endl << "ID\t: " << c_id << endl
-             << "NAME\t: " << c_name << endl
-             << "AGE\t: " << c_age << endl
-             << "CITY\t: " << c_city << endl
+        cout << endl << "ID\t\t: " << c_id << endl
+             << "NAME\t\t: " << c_name << endl
+             << "AGE\t\t: " << c_age << endl
+             << "CITY\t\t: " << c_city << endl
              << "TELEBRAND\t: " << c_tele_brandname << endl
              << "SIM VALIDITY\t: " << c_simcard_validity << endl
-             << "MO.NUMBER\t: " << c_mo_num;
+             << "MO.NUMBER\t: " << c_mo_num << endl << endl;
     }
 };
 
 int main()
 {
-    Customer c1,c2,c3,c4,c5;
-    c1.setter();
-    c2.setter();
-    c3.setter();
-    c4.setter();
-    c5.setter();
+    Customer c[5];
+    for (int i = 0; i < 5; i++)
+    {
+        c[i].setter();
+    }
+    
     return 0;
 }

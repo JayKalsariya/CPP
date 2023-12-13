@@ -35,17 +35,17 @@ public:
              << "COURSE\t: " << s_course << endl
              << "CITY\t: " << s_city << endl
              << "EMAIL\t: " << s_email << endl
-             << "COLLAGE\t: " << s_collage << endl;
+             << "COLLAGE\t: " << s_collage << endl << endl;
     }
 };
 
 int main()
 {
-    Student s1,s2,s3,s4,s5;
-    s1.setdata();
-    s2.setdata();
-    s3.setdata();
-    s4.setdata();
-    s5.setdata();
+    Student s[5];
+    for (int i = 0; i < 5; i++)
+    {
+        s[i].setdata();
+    }
+    
     return 0;
 }
