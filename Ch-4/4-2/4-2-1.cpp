@@ -22,16 +22,18 @@ class Hoteldata
         cin >> this->staffqut;
         cout << "ROOM QUT.\t: ";
         cin >> this->roomqut;
+        cout << "RATING\t: ";
+        cin >> this->rating;
     }
 
     void getdata(){
-        cout << "\t " << this->id << "     " << this->name << "     " << this->type << "     " << this->staffqut << "     " << this->roomqut << "     " << this->location << endl;
+        cout << "\t " << this->id << "     " << this->name << "     " << this->type << "     " << this->staffqut << "     " << this->roomqut << "     " << this->location << this->rating << endl;
     }
 
     static void Format(){
-        cout << "\t-------------------------------------------------------------------------" << endl
-             << "\t ID     NAME         TYPE     YEAR     STAFF QUT.     ROOM QUT.     LOCATION" << endl
-             << "\t-------------------------------------------------------------------------" << endl;
+        cout << "\t----------------------------------------------------------------------------------------" << endl
+             << "\t ID     NAME         TYPE     YEAR     STAFF QUT.     ROOM QUT.     LOCATION     RATING" << endl
+             << "\t----------------------------------------------------------------------------------------" << endl;
     }
 };
 
