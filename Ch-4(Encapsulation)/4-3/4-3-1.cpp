@@ -21,9 +21,10 @@ int main(int id, char name[20])
     int n;
     
     cout << "Enter num of Company : "; cin >> n;
+    fflush(stdin);
     cout << "Enter Id : " ; cin >> id; 
     fflush(stdin);
-    cout << "Enter Company name : "; cin >> name;
+    cout << "Enter Company name : "; gets(name);
     Dia d(name, id);
     
     return 0;
